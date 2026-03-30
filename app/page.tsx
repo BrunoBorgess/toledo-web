@@ -417,7 +417,7 @@ export default function DrToledoPage() {
           <div>
             <p className="text-xs tracking-[0.4em] text-[#b8860b]/70 uppercase mb-4">Sobre o Dr. Toledo</p>
             <h2 className="font-display text-5xl leading-tight mb-6 text-[#1a1a1a]">
-              Três décadas dedicadas à{" "}
+              Á mais de Três décadas dedicadas à{" "}
               <em className="text-[#b8860b] not-italic">excelência</em>{" "}
               em estética facial
             </h2>
