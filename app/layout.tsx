@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     siteName: "Dr. Toledo Jr.",
     images: [
       {
-        url: "/dr-toledo-2.png",
+        url: "https://drtoledoharmonizacao.com.br/dr-toledo-2.png",
         width: 1200,
         height: 630,
       },
