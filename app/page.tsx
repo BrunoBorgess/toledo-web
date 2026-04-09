@@ -100,37 +100,40 @@ function BeforeAfterSlider({ before, after }: { before: string; after: string })
   const onMouseUp = () => { isDragging.current = false; };
   const onTouchMove = (e: React.TouchEvent) => { updateSlider(e.touches[0].clientX); };
 
+  const containerWidth = containerRef.current?.offsetWidth ?? 600;
+
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-72 cursor-col-resize overflow-hidden rounded-2xl select-none"
+      className="relative w-full h-[420px] cursor-col-resize overflow-hidden rounded-2xl select-none"
       onMouseMove={onMouseMove}
       onMouseUp={onMouseUp}
       onMouseLeave={onMouseUp}
       onTouchMove={onTouchMove}
     >
-      <div className="absolute inset-0 bg-stone-100">
+      {/* camada depois — fixa embaixo */}
+      <div className="absolute inset-0">
         <img src={after} alt="Depois" className="w-full h-full object-cover" draggable={false} />
         <span className="absolute bottom-3 right-3 bg-[#b8860b] text-white text-xs font-semibold px-3 py-1 rounded-full tracking-widest uppercase">
           Depois
         </span>
       </div>
 
+      {/* camada antes — só a janela encolhe, a imagem não */}
       <div className="absolute inset-0 overflow-hidden" style={{ width: `${sliderPos}%` }}>
-        <div className="absolute inset-0 bg-stone-200" style={{ width: `${100 / (sliderPos / 100)}%` }}>
-          <img
-            src={before}
-            alt="Antes"
-            className="w-full h-full object-cover"
-            style={{ width: `${10000 / sliderPos}%`, maxWidth: "none" }}
-            draggable={false}
-          />
-        </div>
+        <img
+          src={before}
+          alt="Antes"
+          className="absolute inset-0 h-full object-cover"
+          style={{ width: `${containerWidth}px` }}
+          draggable={false}
+        />
         <span className="absolute bottom-3 left-3 bg-white/90 text-stone-600 text-xs font-semibold px-3 py-1 rounded-full tracking-widest uppercase">
           Antes
         </span>
       </div>
 
+      {/* divisor */}
       <div className="absolute top-0 bottom-0 w-0.5 bg-white z-10" style={{ left: `${sliderPos}%` }}>
         <button
           className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center border border-stone-200"
