@@ -1,4 +1,4 @@
-"use client";
+ "use client";
 
 import { useState, useEffect, useRef } from "react";
 
@@ -6,15 +6,15 @@ const beforeAfterCases = [
   {
     id: 1,
     category: "Harmonização Facial",
-    before: "/images/before-1.jpg",
-    after: "/images/after-1.jpg",
+    before: "/before-1.png",
+    after: "/after-1.jpeg",
     description: "Contorno facial e preenchimento",
   },
   {
     id: 2,
     category: "Preenchimento Labial",
-    before: "/images/before-2.jpg",
-    after: "/images/after-2.jpg",
+    before: "/before-2.png",
+    after: "/after-2.jpeg",
     description: "Volume e definição labial",
   },
   {
@@ -27,8 +27,8 @@ const beforeAfterCases = [
   {
     id: 4,
     category: "Harmonização Facial",
-    before: "/images/before-4.jpg",
-    after: "/images/after-4.jpg",
+    before: "/before-4.png",
+    after: "/after-4.png",
     description: "Rejuvenescimento completo",
   },
 ];
@@ -221,7 +221,7 @@ export default function DrToledoPage() {
           </div>
 
           <a
-            href="https://wa.me/5517999999999?text=Olá%20Dr.%20Toledo,%20gostaria%20de%20agendar%20uma%20consulta"
+            href="https://wa.me/5517997743065?text=Olá%20Dr.%20Toledo,%20gostaria%20de%20agendar%20uma%20consulta"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:flex items-center gap-2 border border-[#b8860b] text-[#b8860b] text-xs tracking-widest uppercase px-5 py-2.5 rounded-full hover:bg-[#b8860b] hover:text-white transition-all duration-300 font-medium"
@@ -251,7 +251,7 @@ export default function DrToledoPage() {
               </a>
             ))}
             <a
-              href="https://wa.me/5517999999999"
+              href="https://wa.me/5517997743065"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-[#b8860b] text-[#b8860b] text-xs tracking-widest uppercase px-5 py-3 rounded-full text-center mt-2"
@@ -285,7 +285,7 @@ export default function DrToledoPage() {
             </p>
             <div className="flex flex-wrap gap-4 animate-fadeUp delay-300">
               <a
-                href="https://wa.me/5517999999999?text=Olá%20Dr.%20Toledo,%20gostaria%20de%20agendar%20uma%20consulta"
+                href="https://wa.me/5517997743065?text=Olá%20Dr.%20Toledo,%20gostaria%20de%20agendar%20uma%20consulta"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="gold-bg text-white text-sm tracking-widest uppercase px-8 py-4 rounded-full font-semibold hover:opacity-90 transition-opacity shadow-md"
@@ -567,7 +567,7 @@ export default function DrToledoPage() {
             ideal para realçar sua beleza natural.
           </p>
           <a
-            href="https://wa.me/5517999999999?text=Olá%20Dr.%20Toledo,%20gostaria%20de%20agendar%20uma%20consulta"
+            href="https://wa.me/5517997743065?text=Olá%20Dr.%20Toledo,%20gostaria%20de%20agendar%20uma%20consulta"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-[#c9a84c] text-[#1a1209] font-semibold text-sm tracking-widest uppercase px-10 py-5 rounded-full hover:opacity-90 transition-opacity shadow-lg"
@@ -600,7 +600,7 @@ export default function DrToledoPage() {
               <span className="text-stone-300">Brasil</span>
             </p>
             <a
-              href="https://maps.google.com"
+              href="https://maps.app.goo.gl/1UFYeGQJv4BU44iC6"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-xs text-[#b8860b] mt-3 hover:underline"
@@ -613,7 +613,7 @@ export default function DrToledoPage() {
             <p className="text-xs tracking-[0.3em] text-stone-300 uppercase mb-5">Contato</p>
             <div className="space-y-3">
               <a
-                href="https://wa.me/5517999999999"
+                href="https://wa.me/5517997743065"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-stone-500 text-sm hover:text-[#b8860b] transition-colors"
@@ -621,7 +621,7 @@ export default function DrToledoPage() {
                 <span className="gold">○</span> WhatsApp
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/drtoledoharmonizacao?igsh=Y2Rwcm81MnJhaDhj"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-stone-500 text-sm hover:text-[#b8860b] transition-colors"
